@@ -1,3 +1,346 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+######################## default configuration ####################
+baseURL = "https://bisstox.netlify.app"
+title = "Geeky | Hugo Personal Blog Template"
+theme = "geeky-hugo"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "20"
+# google analytics
+googleAnalytics = "" # example: UA-123-45, for more info, read the article https://support.google.com/analytics/answer/1008080?hl=en
+# disqus short name
+disqusShortname = "themefisher-template" # get your shortname form here : https://disqus.com
+# disable language
+disableLanguages = ["fr"] # example: ["fr"] for disable french language
+
+############################# Modules ##############################
+[module]
+[module.hugoVersion]
+extended = true
+min = "0.87.0"
+
+############################# Outputs ##############################
+[outputs]
+home = ["HTML", "RSS", "JSON", "WebAppManifest"]
+
+############################# Imaging ##############################
+[imaging]
+# See https://github.com/disintegration/imaging
+# Default JPEG or WebP quality setting. Default is 75.
+quality = 90
+
+############################# Caches ###############################
+[caches]
+[caches.images]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+[caches.assets]
+dir = ":resourceDir/_gen"
+maxAge = "720h"
+
+
+############################# Markup ###############################
+[markup]
+[markup.goldmark.renderer]
+unsafe = true
+
+
+############################ Media types ############################
+[mediaTypes]
+[mediaTypes."application/manifest+json"]
+suffixes = ["webmanifest"]
+
+[mediaTypes."text/netlify"]
+delimiter = ""
+suffixes = [""]
+
+
+############################ Output Format ###########################
+[outputFormats]
+[outputFormats.WebAppManifest]
+mediaType = "application/manifest+json"
+rel = "manifest"
+
+############# English navigation ##############
+
+# main menu
+[[main]]
+name = "Home"
+url = ""
+weight = 1
+
+[[main]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[main]]
+name = "Contact"
+url = "contact/"
+weight = 3
+
+[[main]]
+name = "Pages"
+url = "#"
+weight = 3
+hasChildren = true
+
+  [[main]]
+  parent = "Pages"
+  name = "Tags"
+  url = "tags/"
+  weight = 1
+
+  [[main]]
+  parent = "Pages"
+  name = "Categories"
+  url = "categories/"
+  weight = 2
+
+# footer menu
+[[footer]]
+name = "Home"
+url = "/"
+weight = 1
+
+[[footer]]
+name = "About"
+url = "about/"
+weight = 2
+
+[[footer]]
+name = "Contact"
+url = "contact/"
+weight = 3
+
+[[footer]]
+name = "Privacy Policy"
+url = "privacy-policy/"
+weight = 4
+
+[hugoVersion]
+extended = true
+min = "0.106.0"
+
+[[imports]]
+path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/preloader"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/social-share"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/cookie-consent"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/render-link"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/icons/font-awesome"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/valine-comment"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/components/crisp-chat"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/pwa"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/images"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/buttons"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/codepen"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/collapse"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/notice"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/video"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/tabs"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/image"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/gallery"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/table-of-contents"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/youtube-lite"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/shortcodes/vimeo-lite"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/baidu-analytics"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/matomo-analytics"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/plausible-analytics"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/counter-analytics"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/google-tag-manager"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/site-verifications"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/seo-tools/basic-seo"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/gzip-caching"
+
+[[imports]]
+path = "github.com/gethugothemes/hugo-modules/adsense"
+
+
+#################### default parameters ################################
+# favicon
+favicon = "images/favicon.png"
+# logo
+logo = "images/logo.png"
+# use `x` with logo_width, example: "100x".
+# Note: logo_width is not work with .svg file
+logo_width = "150x"
+# logo text will only show when logo is missing.
+logo_text = "Geeky"
+# navbar fixed to top
+navbar_fixed = false
+# OpenGraph / Twitter Card metadata
+description = "This is meta description"
+author = "Themefisher"
+image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
+# contact info
+address = "9567 Turner Trace Apt. BC C3G8A4"
+mobile = "+211234565523"
+email = "info@email.com"
+# contact form action
+contact_form_action = "#" # contact form works with https://formspree.io
+# search
+search = true
+
+# Posts related Titles & Contents
+categories_title = "Blog Categories"
+posts_title = "Featured"
+featured_post_title = "Featured Post"
+recent_post_title = "Recent Post"
+featured_post_button = "Featured"
+recent_post_button = "Recent"
+read_more_button = "Read more"
+previous_button = "Previous"
+next_button = "Next"
+related_posts = "Related Posts"
+showing_posts = "Showing Post From"
+no_categories_found = "No Categories Found"
+no_tags_found = "No Tags Found"
+
+mainSections = ["blog"]
+# about widget content
+about_widget_content = "Lorem ipsum dolor sit amet, conse tfctetur adipiscing elit. Vel in in donec iaculis tempasus odio nunc laoreet . Libero ullam rgscorper."
+# footer content
+footer_content = "Lorem ipsum dolor sit amt, conse adip iscing. donec iaculis tempasus laoreet. Libero ullam rgscper."
+# custom script on header, example: custom_script= "<script>console.log(\"Hello World\")</script>" 
+custom_script= ""
+# copyright
+theme_copyright = true
+copyright = "Copyright by your company"
+
+# 404
+error_404_text = "404 Page Not Found!"
+error_404_button = "Back To Home"
+
+# Preloader
+[preloader]
+enable = false
+preloader = "" # use jpg, png, svg or gif format.
+
+# Banner
+[banner]
+enable = true
+title_large = "Welcome **!**"
+title_small = "to Jhon Bravo Blog"
+image = "images/banner.png"
+background_image = "/images/banner-bg-shape.svg"
+content = "Are Developer and recently started your own business Already made website to ensure presence wants to develop."
+button_label = "Know About Me"
+button_link = "about/"
+
+# Advertise
+[advertisement]
+image = "images/promotion.png"
+link = "https://gethugothemes.com/"
+
+# cookies
+[cookies]
+enable = false
+expire_days = 2
+content = "This site uses cookies. By continuing to use this website, you agree to their use."
+button = "I Accept"
+
+######################## sidebar widgets #########################
+[widgets]
+sidebar = ["about", "categories", "recent-post", "newsletter"]
+# available widget : about,categories,newsletter,recent-post
+
+
+# Subscription
+[subscription]
+enable = false
+newsletter_title = "Newsletter"
+newsletter_invitation = "Join thousands of Tiny Salt subscribers and get our best recipes delivered each week!"
+newsletter_placeholder = "Type And Hit Enter"
+newsletter_reminder_a = "By Singing Up, You Agree To"
+newsletter_reminder_b = "Privacy Policy"
+newsletter_button = "Sign in"
+# mailchimp subsciption
+mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
+mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
+
+
+############################# social site ########################
+[[social]]
+title = "facebook"
+icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+title = "twitter"
+icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
+link = "#"
+
+[[social]]
+title = "instagram"
+icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "github"
+icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
+
+[[social]]
+title = "linkedin"
+icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
+link = "#"
