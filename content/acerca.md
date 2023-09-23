@@ -1,14 +1,15 @@
 ---
 title: "Acerca de Bisstox"
-description: "this is meta-description"
+description: "nuestra agencia"
 image: "images/author.png"
 layout: "about"
 draft: false
+slug: acerca
 
 # education
 education:
   enable: true
-  title: "Formal Education"
+  title: "Historia"
   education_list:
   - name: "Southeast University"
     content: "1985 • 1991 • gravida nibh velvelit auctor alimo quet menean solli"
@@ -22,7 +23,7 @@ education:
 # experience
 experience:
   enable: true
-  title: "Work Experience"
+  title: "Proyectos"
   experience_list:
   - "Best Writer Award"
   - "Best New Newel"

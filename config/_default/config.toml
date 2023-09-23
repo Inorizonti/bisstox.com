@@ -1,9 +1,9 @@
 ######################## default configuration ####################
-baseURL = "https://bisstox.netlify.com"
+baseURL = "https://bisstox.com"
 title = "Ayudándote a ser mejor en lo que haces"
 theme = "geeky-hugo"
-languageName = "En"
-languageCode = "en-us"
+languageName = "Es"
+languageCode = "es-ec"
 # post pagination
 paginate = "6"
 # post excerpt

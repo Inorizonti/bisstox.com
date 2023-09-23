@@ -1,0 +1,25 @@
+@media (min-width: 992px) {
+.banner .col-lg-6:first {
+    flex: none;
+    width: 70% !important;
+}
+.banner .col-lg-6:last {
+    flex: none;
+    width: 30% !important;
+}
+}
+
+.banner img.img-fluid.img-fluid {
+    height: 375px;
+    object-fit: none;
+    object-position: 5% 10%;
+    max-width: 300px;
+}
+
+h1.banner-title.mb-0 {
+    font-size: 3.5rem;
+}
+
+.banner h2.h2.fw-normal.mb-4 {
+    font-size: 2.5rem;
+}
