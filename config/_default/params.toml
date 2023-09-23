@@ -26,7 +26,7 @@ search = true
 # Posts related Titles & Contents
 categories_title = "Categorías del blog"
 posts_title = "Destacado"
-featured_post_title = "Publicación Destacada"
+featured_post_title = "Publicaciones Destacadas"
 recent_post_title = "Publicaciones Recientes"
 featured_post_button = "Destacado"
 recent_post_button = "Reciente"
