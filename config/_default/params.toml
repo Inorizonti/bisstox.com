@@ -15,7 +15,7 @@ description = "This is meta description"
 author = "Bisstox"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact info
-address = "Av. 5&#170; SO 3005"
+address = "Avenida 5&#170; SO 3005"
 mobile = "+593 099 563 2739"
 email = "ventas@bisstox.com"
 # contact form action
@@ -62,7 +62,7 @@ preloader = "" # use jpg, png, svg or gif format.
 [banner]
 enable = true
 title_large = "Tecnología que ayuda"
-title_small = "a los negocios a ser mejores en lo que hacen"
+title_small = "a los negocios a ser mejores <br />en lo que hacen"
 image = "images/banner.png"
 background_image = "/images/banner-bg-shape.svg"
 content = "Potenciamos tu negocio a través de innovadoras soluciones tecnológicas."
