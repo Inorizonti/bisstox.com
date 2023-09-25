@@ -1,7 +1,7 @@
 ---
 title: "Acerca de Bisstox"
 description: "nuestra agencia"
-image: "images/hero-bisstox.jpg"
+image: "images/acerca-de.png"
 layout: "about"
 draft: false
 slug: acerca
@@ -51,3 +51,5 @@ experience:
 Si compartes nuestra visión y valores, te invitamos a unirte a nuestro viaje hacia el éxito y la prosperidad. Juntos, podemos transformar vidas y negocios, impulsando el crecimiento y la rentabilidad en la era digital.
 
 ¡Avancemos hacia el éxito y la prosperidad!
+
+Ilustración: [Image by Freepik](https://www.freepik.com/free-psd/tech-future-banner-template-concept-template_6762762.htm)
